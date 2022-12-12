@@ -1,0 +1,63 @@
+%card
+    width: 50%
+    padding: 50px 103px 55px
+    text-align: center
+%card-title
+    font-size: 29px
+    margin-bottom: 20px
+    text-transform: uppercase
+    padding-top: 130px
+    position: relative
+%card-icon
+    content: ''
+    width: 100px
+    height: 100px
+    position: absolute
+    top: 0
+    left: 50%
+    transform: translateX(-50%)
+    line-height: 100px
+    text-align: center
+    display: block
+    border-radius: 50%
+
+.cards
+    display: flex
+    flex-wrap: wrap
+    margin-top: -150px
+    margin-bottom: 100px
+    
+.card-1
+    @extend %card
+    background-color: $red
+    h4
+       @extend %card-title
+    h4::before
+        @extend %card-icon
+        background: url('../img/icon_sprites.png') -1px -200px $white
+
+.card-2
+    @extend %card
+    background-color: $yellow
+    h4
+       @extend %card-title
+    h4::before
+        @extend %card-icon
+        background: url('../img/icon_sprites.png') -1px -301px $white
+
+.card-3
+    @extend %card
+    background-color: $blue
+    h4
+       @extend %card-title
+    h4::before
+        @extend %card-icon
+        background: url('../img/icon_sprites.png') -1px 0px $white
+.card-4
+    @extend %card
+    background-color: $vialet
+    h4
+       @extend %card-title
+    h4::before
+        @extend %card-icon
+        background: url('../img/icon_sprites.png') -1px -100px $white
